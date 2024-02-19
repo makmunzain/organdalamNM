@@ -61,6 +61,8 @@
         }).then((instance) => {
           unityInstance = instance;
           loadingBar.style.display = "none";
+          unityInstance.Module.WebXR.toggleAR();
+          
           if (fullscreenButton)
           {
             fullscreenButton.onclick = () => {
